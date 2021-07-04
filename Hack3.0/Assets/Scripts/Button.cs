@@ -17,6 +17,16 @@ public class Button : MonoBehaviour
 
     public void Level1()
     {
+        SceneManager.LoadScene(2);
+    }
+
+    public void Reg()
+    {
         SceneManager.LoadScene(1);
+    }
+
+    public void Auth()
+    {
+        SceneManager.LoadScene(3);
     }
 }
