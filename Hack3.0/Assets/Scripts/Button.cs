@@ -1,12 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static ProgressBar;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class Button : MonoBehaviour
 {
+    public Image image;
+    public GameObject Start;
+
     public void StartHack()
     {
-        var progressBar = new ProgressBar();
-        progressBar.IncrementProgress(1f);
+        image.gameObject.SetActive(false);
+        Start.gameObject.SetActive(false);
+    }
+
+    public void Level1()
+    {
+        SceneManager.LoadScene(1);
     }
 }
